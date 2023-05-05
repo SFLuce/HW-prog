@@ -1,0 +1,15 @@
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\bin\Debug\net6.0\HOMEWORK.exe
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\bin\Debug\net6.0\HOMEWORK.deps.json
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\bin\Debug\net6.0\HOMEWORK.runtimeconfig.json
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\bin\Debug\net6.0\HOMEWORK.dll
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\bin\Debug\net6.0\HOMEWORK.pdb
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\HOMEWORK.csproj.AssemblyReference.cache
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\HOMEWORK.GeneratedMSBuildEditorConfig.editorconfig
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\HOMEWORK.AssemblyInfoInputs.cache
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\HOMEWORK.AssemblyInfo.cs
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\HOMEWORK.csproj.CoreCompileInputs.cache
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\HOMEWORK.dll
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\refint\HOMEWORK.dll
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\HOMEWORK.pdb
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\HOMEWORK.genruntimeconfig.cache
+D:\ОБУЧЕНИЕ\Искусственный интеллект\Программирование\Tasks\Sem1\HOMEWORK\obj\Debug\net6.0\ref\HOMEWORK.dll
