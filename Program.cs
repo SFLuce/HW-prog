@@ -1,96 +1,116 @@
-﻿// See https://aka.ms/new-console-template for more information
-// Console.WriteLine("Hello, World!");
+﻿// Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
+// m = 3, n = 4.
+// 0,5 7 -2 -0,2
+// 1 -3,3 8 -9,9
+// 8 7,8 -7,1 9
 
-// Задача 34: Задайте массив заполненный случайными положительными трёхзначными числами. Напишите программу, которая покажет количество чётных чисел в массиве.
-
-// [345, 897, 568, 234] -> 2
-
-// int[] CreateArrey(int size)
+// double[,] Create2DRandomArray(int rows, int columns, int minValue, int maxValue)
 // {
-//     int[] arrey = new int[size];
-
-//     for (int i = 0; i < size; i++)
+//     double[,] array = new double[rows, columns];
+//     Random random = new Random();
+//      for (int i = 0; i <rows; i++)
 //     {
-//         Console.Write($"Input three-digit element of arrey {i}:  ");
-//         arrey[i]=Convert.ToInt32(Console.ReadLine());
+//        for (int j = 0; j < columns; j++)
+//        {
+//             array[i,j]= Math.Round(random.Next(minValue, maxValue+1)+ random.NextDouble(),2);
+//        }
 //     }
-//     return arrey;
-// }
-// int CountEven(int[] arrey)
-// {
-//     int count = 0;
-//     for (int i = 0; i < arrey.Length; i++)
-//     {
-//         if (arrey[i] %2 ==0) count++;
-//     }
-//     return count;
-// }
-// int[] myArrey = CreateArrey(5);
-// Console.WriteLine($"Count even-digit in arrey -> {CountEven(myArrey)}");
-
-
-// Задача 36: Задайте одномерный массив, заполненный случайными числами. Найдите сумму элементов, стоящих на нечётных позициях.
-// [3, 7, 23, 12] -> 19
-
-// int[] CreateArrey(int size, int minValue, int maxValue)
-// {
-//     int[] newArrey = new int[size];
-
-//     for (int i = 0; i < size; i++)
-//     {
-//         newArrey[i]= new Random().Next(minValue, maxValue+1);
-//     }
-//     return newArrey;
-// }
-// void PrintArrey(int[] arrey)
-// {
-//     for (int i = 0; i < arrey.Length; i++)
-//     {
-//         Console.Write(arrey[i] + " ");
-//     }
+//     return array;
 // }
 
-// int SumOddIndex(int[] arrey)
+// void Print2DArray(double[,] array)
 // {
-//     int sum = 0;
-//     for (int i = 1; i < arrey.Length; i+=2)
+//     for (int i = 0; i <array.GetLength(0); i++)
 //     {
-//         sum += arrey[i];
-//     }
-//     return sum;
+//        for (int j = 0; j < array.GetLength(1); j++)
+//        {
+//         Console.Write(array[i,j] + "\t");
+//        }
+//         Console.WriteLine();
+//     }  
 // }
 
-// int[] myArrey = CreateArrey(10, -100, 100);
-// PrintArrey(myArrey);
-// Console.WriteLine();
-// Console.WriteLine($"Sum elements in odd index -> {SumOddIndex(myArrey)}");
+// Console.WriteLine("Input numbers of rows: ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input numbers of columns: ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input minValue of element:");
+// int minValue = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input maxValue of element:");
+// int maxValue = Convert.ToInt32(Console.ReadLine());
 
-// Задача 38: Задайте массив вещественных чисел. Найдите разницу между максимальным и минимальным элементов массива.
-// [3 7 22 2 78] -> 76
+// double[,] myArray = Create2DRandomArray(rows, columns, minValue, maxValue);
+// Print2DArray(myArray);
 
-double[] CreateArrey(int size, int minValue, int maxValue)
+
+// Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+
+int[,] Create2DRandomArray(int rows, int columns, int minValue, int maxValue)
 {
-   double[] newArrey= new double[size];
-    Random rand = new Random();
-    for (int i = 0; i < size; i++)
+    int[,] array = new int[rows, columns];
+        for (int i = 0; i <rows; i++)
     {
-        newArrey[i]= rand.Next(minValue, maxValue+1)+ rand.NextDouble();
+       for (int j = 0; j < columns; j++)
+       {
+            array[i,j]= new Random().Next(minValue, maxValue+1);
+       }
     }
-    return newArrey;
+    return array;
 }
 
-void PrintArrey(double[] arrey)
+void Print2DArray(int[,] array)
 {
-    for (int i = 0; i < arrey.Length; i++)
+    for (int i = 0; i <array.GetLength(0); i++)
     {
-        Console.Write(arrey[i] + " ");
-    }
+       for (int j = 0; j < array.GetLength(1); j++)
+       {
+        Console.Write(array[i,j] + "\t");
+       }
+        Console.WriteLine();
+    }  
 }
 
+// int[,] myArray = Create2DRandomArray(6, 5, 0, 50);
+// Print2DArray(myArray);
+// Console.WriteLine("Input index of row: ");
+// int n = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Input index of column: ");
+// int m = Convert.ToInt32(Console.ReadLine());
 
-double[] myArrey = CreateArrey(5, -10, 10);
+//   if (n < 0 | n > myArray.GetLength(0) - 1 | m < 0 | m > myArray.GetLength(1) - 1)
+// {
+//     Console.WriteLine("Элемент не существует ");
+// }
+//     else
+//     {
+//     Console.WriteLine("Значение элемента массива = {0}", myArray[n, m]);
+// }
 
-PrintArrey(myArrey);
-Console.WriteLine();
-Console.WriteLine($"Difference Max & Min elements -> {myArrey.Max()- myArrey.Min()}");
+
+// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+// Например, задан массив:
+// 1 4 7 2
+// 5 9 2 3
+// 8 4 2 4
+// Среднее арифметическое каждого столбца: 4,6; 5,6; 3,6; 3.
+
+int[,] myArray = Create2DRandomArray(4, 4, 0, 10);
+ Print2DArray(myArray);
+
+void FindAverage(int[,] array)
+{
+   for (int j = 0; j < array.GetLength(1); j++)
+    {
+        double sum = 0;
+         int n = array.GetLength(0);
+        for (int i = 0; i <array.GetLength(0); i++)
+       {
+             sum = sum + array[i,j];
+        }
+         Console.WriteLine($"Average of {j} column =  { sum/n }");
+    }
+     }
+  FindAverage(myArray);
+
+
 
