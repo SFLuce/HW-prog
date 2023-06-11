@@ -77,7 +77,7 @@ void Print2DArray(int[,] array)
 // Console.WriteLine("Input index of column: ");
 // int m = Convert.ToInt32(Console.ReadLine());
 
-//   if (n < 0 | n > myArray.GetLength(0) - 1 | m < 0 | m > myArray.GetLength(1) - 1)
+//   if (n < 0 || n > myArray.GetLength(0) - 1 || m < 0 | m > myArray.GetLength(1) - 1)
 // {
 //     Console.WriteLine("Элемент не существует ");
 // }
